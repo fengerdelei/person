@@ -1,0 +1,264 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a ,p{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+.banner {
+  width: 100%;
+  height: 650px;
+  /*background: #269abc;*/
+  background-image: url("../images/aaaaa.png");
+  background-size: cover;
+  position: relative;
+  padding: 20px 0;
+  font-family: "宋体";
+}
+.container {
+  height: auto;
+}
+.banner .top{
+  text-align: center;
+  color: #fff;font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.banner .top a{
+  color: #fff;
+  cursor: pointer;
+  transition:all .8s ease;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  border: 10px double #fff;
+  /*background: #fff;*/
+  text-align: center;
+  line-height: 150px;
+  font-size: 5rem;
+  color: #fff;
+  font-family: "楷体";
+  margin: 100px auto;
+  border-radius: 50%;
+}
+.banner h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+.about {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+.about h2 {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 2rem;
+}
+.tubiao {
+  width: 252px;
+  margin: 20px auto;
+  display: block;
+}
+.about .touxiang{
+	width: 200px;
+	height: 200px;
+	margin: 50px auto;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.about p{
+	display: block;
+	float: right;
+  	font-size: 18px;
+  	line-height: 30px;
+  	width: 60%;
+}
+.about p{
+	margin-top: 30px;
+}
+.zuopin {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  padding: 30px 0;
+  background: #269abc;
+  overflow: hidden;
+}
+.zuopin h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.zuopin .left {
+  text-align: left;
+  font-size: 3rem;
+  line-height: 300px;
+  float: left;
+}
+.zuopin .right{
+  text-align: right;
+  font-size: 3rem;
+  line-height: 300px;
+  float: left;
+  overflow: hidden;
+}
+.zuopin ul{
+  width: auto;
+  overflow: hidden;
+  margin: 30px auto;
+}
+.zuopin ul img{
+  padding: 30px;
+}
+.skill {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  padding: 30px 0;
+  background: #a8aaff;
+}
+.skill h2 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 2rem;
+  color: #fff;
+}
+.skill-item {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+.skill-item p{
+	color: #333;
+}
+.skill-item .aa{
+  width: 150px;
+  height: 150px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: #ec971f;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  font-size: 24px;
+}
+.portfolio {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+.portfolio h2 {
+  margin: 20px auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.portfolio .kuang{
+  width: 800px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.portfolio .portfolio-item {
+  width: 90%;
+  height: 200px;
+  /*border: 1px solid black;*/
+  /*box-sizing: border-box;*/
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px auto;
+  -webkit-transition:all 1s ease;
+}
+.portfolio .portfolio-item:hover{
+  transform:scale(1.1,1.1);
+}
+.i1{
+	background: url("../images/github.png") center no-repeat;
+	background-size: 100%;
+}
+.i2{
+	background: url("../images/xiaomi.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i3{
+	background: url("../images/tianmao.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i4{
+	background: url("../images/wzqs.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i5{
+	background: url("../images/tanchishe.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i6{
+	background: url("../images/puker.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i7{
+	background: url("../images/dazi.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i8{
+	background: url("../images/huaban.jpg") center no-repeat;
+	background-size: 100%;
+}
+.i9{
+	background: #000;
+	color: #eee;
+	font-size: 38px;
+	text-align: center;
+	line-height: 200px;
+	font-family: "宋体";
+	color: #eee;
+}
+.conn{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+  	padding: 30px 0;
+  	background: #010101;
+}
+.conn h2{
+	margin: 20px auto;
+  	font-size: 2rem;
+  	text-align: center;
+  	color: #fff;
+}
+.conn ul li{
+	width: 100%;
+	height: 30px;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 20px 0;
+	color: #eee;
+}
+.conn .left{
+	text-align: right;
+}
+.conn .right{
+	text-align: left;
+}

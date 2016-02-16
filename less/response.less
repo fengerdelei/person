@@ -1,0 +1,155 @@
+@import "var.less";
+.aa(){
+  margin: 0 auto;
+  .clear();
+  &>.row{
+    width: 100%;
+  }
+  &-fluid {
+    width: 100%;
+    .clear();
+  }
+  &-fluid>.row{
+    width: 100%;
+  }
+}
+.container {
+  @media screen and (max-width: @num1) {
+    width: @num1*1px-100px;
+    .aa();
+    &>.row>.col-s-v{
+      display: block;
+    }
+    &>.row>.col-s-h{
+      display: none;
+    }
+    &-fluid>.row>.col-s-v{
+      display: block;
+    }
+    &-fluid>.row>.col-s-h{
+      display: none;
+    }
+  }
+  .response(s);
+}
+
+.container {
+  @media screen and (min-width: @num1) and (max-width:@num2){
+    width: @num1;
+    .aa();
+    &>.row>.col-m-v{
+      display: block;
+    }
+    &>.row>.col-m-h{
+      display: none;
+    }
+    &-fluid>.row>.col-m-v{
+      display: block;
+    }
+    &-fluid>.row>.col-m-h{
+      display: none;
+    }
+    .response(m);
+  }
+}
+.container {
+  @media screen and (min-width: @num2) {
+    width: @num2;
+    .aa();
+    &>.row>.col-l-v{
+      display: block;
+    }
+    &>.row>.col-l-h{
+      display: none;
+    }
+    &-fluid>.row>.col-l-v{
+      display: block;
+    }
+    &-fluid>.row>.col-l-h{
+      display: none;
+    }
+    .response(l);
+  }
+}
+
+.response(@type,@i:0) when(@i<=@col){
+  &>.row>.col-@{type}-@{i}{
+    float: left;
+    width:@i/@col*100%;
+  }
+  &-fluid>.row>.col-@{type}-@{i}{
+    float: left;
+    width:@i/@col*100%;
+  }
+  &>.row>.col-@{type}-left-@{i}{
+    position: relative;
+    left: @i/@col*-100%;
+  }
+  &>.row>.col-@{type}-right-@{i}{
+    position: relative;
+    left: @i/@col*100%;
+  }
+  &-fluid>.row>.col-@{type}-left-@{i}{
+    position: relative;
+    left: @i/@col*-100%;
+  }
+  &-fluid>.row>.col-@{type}-right-@{i}{
+    position: relative;
+    left: @i/@col*100%;
+  }
+  .response(@type,@i+1);
+}
+
+.clear(){
+  &:before,&:after{
+    content:"";
+    display:block;
+  }
+  &:after{
+    clear:both;
+  }
+}
+
+//@media screen and (min-width:@num1) {
+//  .col-s-v{
+//    display: none;
+//  }
+//  .col-l-v{
+//    display: none;
+//  }
+//  .col-m-v{
+//    display: block;
+//  }
+//  .col-s-h{
+//    display: block;
+//  }
+//  .col-l-h{
+//    display: block;
+//  }
+//  .col-m-h{
+//    display: none;
+//  }
+//  .response(m);
+//}
+//
+//@media screen and (min-width:@num2) {
+//  .col-s-v{
+//    display: none;
+//  }
+//  .col-m-v{
+//    display: none;
+//  }
+//  .col-l-v{
+//    display: block;
+//  }
+//  .col-s-h{
+//    display: block;
+//  }
+//  .col-m-h{
+//    display: block;
+//  }
+//  .col-l-h{
+//    display: none;
+//  }
+//  .response(l);
+//}
